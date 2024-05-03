@@ -30,12 +30,23 @@
     }
 
     .footer {
-        display: none;
+      display: none;
     }
-    @media (min-width: 900px) {
-        .footer{
-            display:block;
-        }
+
+    .nlink {
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media screen and (min-width: 900px) {
+      .nlink {
+        color: white;
+      }
+
+      .footer {
+        display: block;
+      }
     }
   </style>
   <body>
@@ -47,68 +58,82 @@
         style="height: 100%; width: 100%; object-fit: cover"
       />
     </div>
-    <div class="top-0 w-100 position-absolute p-1 pb-0 mb-0 z-1">
-      <nav class="navbar navbar-expand-lg glow-white navbar-dark">
+    <div class="top-0 w-100 p-1 pb-0 mb-0 z-1">
+      <nav class="navbar navbar-expand-lg navbar-dark position-absolute fixed-top py-3">
         <div class="container-fluid">
-          <a class="navbar-brand text-white d-flex align-items-center" href="#">
-            <img
-              alt="Logo"
-              class="d-inline-block align-text-top"
-              height="60px"
-              src="logo.png"
-              width="60px"
-            />
-            <h3>&nbsp;Dreams2Code</h3>
-          </a>
+          <img alt="Logo" src="logo.png" style="height: 80px" />
+          <h2 style="font-size: 30px">
+            &ensp;
+            <a class="glow-white text-white text-decoration-none" href="#"
+              >Dreams2Code</a
+            >
+          </h2>
           <button
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
+            aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
             class="navbar-toggler"
-            data-bs-target="#navbarNavAltMarkup"
-            data-bs-toggle="collapse"
+            data-bs-target="#offcanvasNavbar"
+            data-bs-toggle="offcanvas"
             type="button"
           >
-            <span class="navbar-toggler-icon text-white"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse align-content-end"
-            id="navbarNavAltMarkup"
+            aria-labelledby="offcanvasNavbarLabel"
+            class="offcanvas offcanvas-end"
+            id="offcanvasNavbar"
+            tabindex="-1"
           >
-            <!--            <div class="navbar-nav align-items-center disabled">-->
-            <!--              <a class="nav-link text-white" href="#"><h5>Leadership</h5></a>-->
-            <!--            </div>-->
-
-            <div class="navbar-nav align-items-center">
-              <a
-                class="nav-link text-white"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdw40--hwUHmdXSaC-blAXDJyLxotmFSf--7cJtzwj87dJbHQ/viewform"
-                ><h5>Volunteer</h5></a
-              >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Navigation
+              </h5>
+              <button
+                aria-label="Close"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                type="button"
+              ></button>
             </div>
-
-            <div class="navbar-nav align-items-center">
-              <a
-                class="nav-link text-white"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdHcSHJHkTJ70AZw06chM25TGV42UFc4eJ9qHRTxYjqvZV9Ug/viewform"
-                ><h5>Sign up</h5></a
-              >
-            </div>
-
-            <div class="navbar-nav align-items-center">
-              <a
-                class="nav-link text-white"
-                href="https://linktr.ee/dreams2code"
-                ><h5>Linktree</h5></a
-              >
-            </div>
-
-            <div class="navbar-nav align-items-center">
-              <a
-                class="nav-link text-white"
-                href="https://www.instagram.com/dreams2code/"
-                ><h5>Instagram</h5></a
-              >
+            <div class="offcanvas-body text-white">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item px-3">
+                  <a
+                    aria-current="page"
+                    class="active glow-white nlink"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdw40--hwUHmdXSaC-blAXDJyLxotmFSf--7cJtzwj87dJbHQ/viewform"
+                    style="font-size: 23px"
+                    >Volunteer</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a
+                    aria-current="page"
+                    class="active glow-white nlink"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdHcSHJHkTJ70AZw06chM25TGV42UFc4eJ9qHRTxYjqvZV9Ug/viewform"
+                    style="font-size: 23px"
+                    >Join Classes</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a
+                    aria-current="page"
+                    class="active glow-white nlink"
+                    href="https://www.instagram.com/dreams2code/"
+                    style="font-size: 23px"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a
+                    aria-current="page"
+                    class="active glow-white nlink"
+                    href="https://linktr.ee/dreams2code"
+                    style="font-size: 23px"
+                    >Linktree</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -146,7 +171,7 @@
         <div class="<col>">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url(&quot;coding.jpeg&quot;)"
+            style="background-image: url('coding.jpeg')"
           >
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
@@ -167,7 +192,7 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url(&quot;image.jpg&quot;);
+              background-image: url('invaluable_skills.jpg');
               background-size: cover;
             "
           >
@@ -194,7 +219,7 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url(&quot;creative.jpeg&quot;);
+              background-image: url('fostering_creativity.jpeg');
               background-size: cover;
             "
           >
@@ -221,35 +246,62 @@
       id="featured-3"
       style="background-size: cover"
     >
-      <h2 class="pb-4 text-center display-5">Our Services</h2>
-      <div class="row g-4 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <h3 class="fs-2">Computing classes</h3>
-          <p>
-            We teach children ages 10-14 computer science at local libraries.
-            Students start from the basics and slowly learn how to create
-            amazing projects using advanced programming concepts. At it's core,
-            this consists of a 10-week training course, but can be expanded if
-            time permits. Sign up today!
-          </p>
+      <h2 class="pb-2 mb-5 border-bottom text-center display-5">
+        Our Services
+      </h2>
+
+      <div class="row">
+        <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
+          <div class="card">
+            <div class="card-img-top">
+              <img
+                src="boys_and_girls_club.png"
+                class="img-fluid rounded"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Computing Classes</h3>
+              <p class="card-text">
+                Our 10-week computer science training teaches kids aged 10-14
+                programming basics and advanced concepts at local libraries,
+                enabling them to create amazing projects.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="feature col">
-          <h3 class="fs-2">Helping Businesses</h3>
-          <p>
-            We help local businesses in the Central Jersey area with their
-            digital needs. We create websites, mobile apps, and help with
-            digital marketing. This is performed through our developer
-            department and led by our Director of Technology, Milav Shah.
-          </p>
+        <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="smallb.jpg" class="img-fluid rounded" alt="" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Local Businesses</h3>
+              <p class="card-text">
+                We provide digital solutions for local Central Jersey
+                businesses, including websites, mobile apps, and digital
+                marketing, driven by our developer team under Director of
+                Technology.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="feature col">
-          <h3 class="fs-2">Hackathons and Events</h3>
-          <p>
-            We plan to host local hackathons and other events to bring the
-            community together. This would include partnerships with local
-            schools, and inviting possible sponsors. Please stay tuned for
-            details.
-          </p>
+
+        <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="hackathon.jpg" class="img-fluid rounded" alt="" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Hackathons and Events</h3>
+              <p class="card-text">
+                We plan to host local hackathons and other events to bring the
+                community together. This would include partnerships with local
+                schools, and inviting possible sponsors. Please stay tuned for
+                details.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
