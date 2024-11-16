@@ -1,349 +1,265 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      name="viewport"
-    />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <title>Dreams2Code</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-  </head>
 
-  <style>
-    .head {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <title>Dreams2Code</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
-    .glow-white {
-      text-shadow:
-        0 0 20px #fff,
-        0 0 0 #ccc;
-    }
+<style>
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .glow-pink {
-      text-shadow:
-        0 0 20px #ff00b7,
-        0 0 0 #ed40e2;
+  .glow-pink {
+    text-shadow:
+      0 0 20px #ff00b7,
+      0 0 0 #ed40e2;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .nlink {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  @media screen and (min-width: 900px) {
+    .nlink {
+      color: white;
     }
 
     .footer {
-      display: none;
+      display: block;
     }
+  }
+</style>
 
-    .nlink {
-      color: black;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    @media screen and (min-width: 900px) {
-      .nlink {
-        color: white;
-      }
-
-      .footer {
-        display: block;
-      }
-    }
-  </style>
-  <body>
-    <div>
-      <img
-        alt=""
-        class="img-fluid"
-        src="teaching.jpg"
-        style="height: 100%; width: 100%; object-fit: cover"
-      />
-    </div>
-    <div class="top-0 w-100 p-1 pb-0 mb-0 z-1">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark position-absolute fixed-top py-3"
-      >
-        <div class="container-fluid">
-          <img alt="Logo" src="logo.png" style="height: 80px" />
-          <h2 style="font-size: 30px">
-            &ensp;
-            <a class="glow-white text-white text-decoration-none" href="#"
-              >Dreams2Code</a
-            >
-          </h2>
-          <button
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-            class="navbar-toggler"
-            data-bs-target="#offcanvasNavbar"
-            data-bs-toggle="offcanvas"
-            type="button"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            aria-labelledby="offcanvasNavbarLabel"
-            class="offcanvas offcanvas-end"
-            id="offcanvasNavbar"
-            tabindex="-1"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Navigation
-              </h5>
-              <button
-                aria-label="Close"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                type="button"
-              ></button>
-            </div>
-            <div class="offcanvas-body text-white">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item px-3">
-                  <a
-                    aria-current="page"
-                    class="active glow-white nlink"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdw40--hwUHmdXSaC-blAXDJyLxotmFSf--7cJtzwj87dJbHQ/viewform"
-                    style="font-size: 23px"
-                    >Volunteer</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a
-                    aria-current="page"
-                    class="active glow-white nlink"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdHcSHJHkTJ70AZw06chM25TGV42UFc4eJ9qHRTxYjqvZV9Ug/viewform"
-                    style="font-size: 23px"
-                    >Join Classes</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a
-                    aria-current="page"
-                    class="active glow-white nlink"
-                    href="https://www.instagram.com/dreams2code/"
-                    style="font-size: 23px"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a
-                    aria-current="page"
-                    class="active glow-white nlink"
-                    href="https://linktr.ee/dreams2code"
-                    style="font-size: 23px"
-                    >Linktree</a
-                  >
-                </li>
-              </ul>
-            </div>
+<body>
+  <div class="top-0 w-100 p-1 pb-0 mb-0 z-1">
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute fixed-top py-3">
+      <div class="container-fluid">
+        <img alt="Logo" src="logo.png" style="height: 80px" />
+        <h2 style="font-size: 30px">
+          &ensp;
+          <a class="glow-white text-white text-decoration-none" href="#">Dreams2Code</a>
+        </h2>
+        <button aria-controls="offcanvasNavbar" aria-label="Toggle navigation" class="navbar-toggler"
+          data-bs-target="#offcanvasNavbar" data-bs-toggle="offcanvas" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Navigation
+            </h5>
+            <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
           </div>
-        </div>
-      </nav>
-    </div>
-    <div class="top-0 w-100 h-100 position-absolute head">
-      <h1 class="display-3 glow-white text-white text-center">
-        Bridging the digital divide,<br />
-        one line of <code class="glow-pink">code</code> at a time.
-      </h1>
-    </div>
-
-    <div class="container px-4 py-5 mx-auto" id="custom-cards">
-      <h2 class="pb-2 border-bottom text-center display-5">Our Mission</h2>
-
-      <blockquote class="blockquote text-center">
-        <p class="lead">
-          Dreams2Code is a <u>non-profit organization</u> with the vision of
-          transforming our passion for computer science into education for
-          <u>underserved communities</u>. Together, we aspire to spread this
-          passion for technology through hosting hackathons, free computing
-          classes, and aiding local businesses with digital needs. Dreams2Code
-          strives to <em>empower communities</em>, fostering a more inclusive
-          and technologically vibrant future.
-        </p>
-      </blockquote>
-    </div>
-
-    <div class="container px-4 py-5 mx-auto">
-      <h2 class="pb-2 border-bottom text-center display-5">
-        Why Computer Science?
-      </h2>
-
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="<col>">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url(&quot;coding.jpeg&quot;)"
-          >
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-            >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Build Projects
-              </h3>
-              <small
-                >Our program teaches students computer science and coding,
-                enabling them to apply concepts in projects that showcase
-                technical skills and project management abilities.</small
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url(&quot;invaluable_skills.jpg&quot;);
-              background-size: cover;
-            "
-          >
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-            >
-              <h3 class="display-6 pt-5 mt-5 mb-4 lh-1 fw-bold">
-                Invaluable Skills
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <small
-                    >Computer science skills are indispensable today, offering
-                    job opportunities and serving as career paths and
-                    hobbies.</small
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url(&quot;fostering_creativity.jpeg&quot;);
-              background-size: cover;
-            "
-          >
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Fostering Creativity
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <small
-                    >Coding provides limitless creative possibilities,
-                    empowering students to unleash creativity and produce
-                    programs they take pride in.
-                  </small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="container px-4 text-dark"
-      id="featured-3"
-      style="background-size: cover"
-    >
-      <h2 class="pb-2 mb-5 border-bottom text-center display-5">
-        Our Services
-      </h2>
-
-      <div class="row">
-        <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
-          <div class="card">
-            <div class="card-img-top">
-              <img
-                src="boys_and_girls_club.png"
-                class="img-fluid rounded"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Computing Classes</h3>
-              <p class="card-text">
-                Our 10-week computer science training teaches kids aged 10-14
-                programming basics and advanced concepts at local libraries,
-                enabling them to create amazing projects.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
-          <div class="card">
-            <div class="card-img-top">
-              <img src="smallb.jpg" class="img-fluid rounded" alt="" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Local Businesses</h3>
-              <p class="card-text">
-                We provide digital solutions for local Central Jersey
-                businesses, including websites, mobile apps, and digital
-                marketing, driven by our developer team under Director of
-                Technology.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
-          <div class="card">
-            <div class="card-img-top">
-              <img src="hackathon.jpg" class="img-fluid rounded" alt="" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Hackathons and Events</h3>
-              <p class="card-text">
-                We plan to host local hackathons and other events to bring the
-                community together. This would include partnerships with local
-                schools, and inviting possible sponsors. Please stay tuned for
-                details.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer py-4 mt-4 bg-body-secondary">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <img alt="Logo" src="logo.png" style="height: 70px" />
-            <h2>Dreams2Code</h2>
-            <p>
-              Designed and built with love by the Dreams2Code team.
-              <br />
-              <br />
-              © 2024 Dreams2Code
-            </p>
-          </div>
-          <div class="col"></div>
-          <div class="col text-start">
-            <h3>Find us on</h3>
-            <br />
-            <ul class="list-group list-group-flush">
-              <p>
-                <a
-                  class="link-opacity-50-hover"
-                  href="https://linktr.ee/dreams2code"
-                  >Linktree</a
-                >
-              </p>
-              <p>
-                <a
-                  class="link-opacity-50-hover"
-                  href="https://www.instagram.com/dreams2code/"
-                  >Instagram</a
-                >
-              </p>
+          <div class="offcanvas-body text-white">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item px-3">
+                <a aria-current="page" class="active glow-white nlink"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdw40--hwUHmdXSaC-blAXDJyLxotmFSf--7cJtzwj87dJbHQ/viewform"
+                  style="font-size: 23px">Volunteer</a>
+              </li>
+              <li class="nav-item px-3">
+                <a aria-current="page" class="active glow-white nlink"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdHcSHJHkTJ70AZw06chM25TGV42UFc4eJ9qHRTxYjqvZV9Ug/viewform"
+                  style="font-size: 23px">Join Classes</a>
+              </li>
+              <li class="nav-item px-3">
+                <a aria-current="page" class="active glow-white nlink" href="https://www.instagram.com/dreams2code/"
+                  style="font-size: 23px">Instagram</a>
+              </li>
+              <li class="nav-item px-3">
+                <a aria-current="page" class="active glow-white nlink" href="https://linktr.ee/dreams2code"
+                  style="font-size: 23px">Linktree</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+    </nav>
+  </div>
+  <div class="top-0 w-100 h-100 position-absolute head">
+    <h1 class="display-3 glow-white text-white text-center">
+      Bridging the digital divide,<br />
+      one line of <code class="glow-pink">code</code> at a time.
+    </h1>
+  </div>
+
+  <div class="container px-4 py-5 mx-auto" id="custom-cards">
+    <h2 class="pb-2 border-bottom text-center display-5">Our Mission</h2>
+
+    <blockquote class="blockquote text-center">
+      <p class="lead">
+        Dreams2Code is a <u>non-profit organization</u> with the vision of
+        transforming our passion for computer science into education for
+        <u>underserved communities</u>. Together, we aspire to spread this
+        passion for technology through hosting hackathons, free computing
+        classes, and aiding local businesses with digital needs. Dreams2Code
+        strives to <em>empower communities</em>, fostering a more inclusive
+        and technologically vibrant future.
+      </p>
+    </blockquote>
+  </div>
+
+  <div class="container px-4 py-5 mx-auto">
+    <h2 class="pb-2 border-bottom text-center display-5">
+      Why Computer Science?
+    </h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="<col>">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url(&quot;coding.jpeg&quot;)">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+              Build Projects
+            </h3>
+            <small>Our program teaches students computer science and coding,
+              enabling them to apply concepts in projects that showcase
+              technical skills and project management abilities.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="
+              background-image: url(&quot;invaluable_skills.jpg&quot;);
+              background-size: cover;
+            ">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="display-6 pt-5 mt-5 mb-4 lh-1 fw-bold">
+              Invaluable Skills
+            </h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <small>Computer science skills are indispensable today, offering
+                  job opportunities and serving as career paths and
+                  hobbies.</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="
+              background-image: url(&quot;fostering_creativity.jpeg&quot;);
+              background-size: cover;
+            ">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+              Fostering Creativity
+            </h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <small>Coding provides limitless creative possibilities,
+                  empowering students to unleash creativity and produce
+                  programs they take pride in.
+                </small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container px-4 text-dark" id="featured-3" style="background-size: cover">
+    <h2 class="pb-2 mb-5 border-bottom text-center display-5">
+      Our Services
+    </h2>
+
+    <div class="row">
+      <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="boys_and_girls_club.png" class="img-fluid rounded" alt="" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Computing Classes</h3>
+            <p class="card-text">
+              Our 10-week computer science training teaches kids aged 10-14
+              programming basics and advanced concepts at local libraries,
+              enabling them to create amazing projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="smallb.jpg" class="img-fluid rounded" alt="" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Local Businesses</h3>
+            <p class="card-text">
+              We provide digital solutions for local Central Jersey
+              businesses, including websites, mobile apps, and digital
+              marketing, driven by our developer team under Director of
+              Technology.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 mb-3 py-3 mb-sm-0 col-md-4">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="hackathon.jpg" class="img-fluid rounded" alt="" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hackathons and Events</h3>
+            <p class="card-text">
+              We plan to host local hackathons and other events to bring the
+              community together. This would include partnerships with local
+              schools, and inviting possible sponsors. Please stay tuned for
+              details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer py-4 mt-4 bg-body-secondary">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img alt="Logo" src="logo.png" style="height: 70px" />
+          <h2>Dreams2Code</h2>
+          <p>
+            Designed and built with love by the Dreams2Code team.
+            <br />
+            <br />
+            © 2024 Dreams2Code
+          </p>
+        </div>
+        <div class="col"></div>
+        <div class="col text-start">
+          <h3>Find us on</h3>
+          <br />
+          <ul class="list-group list-group-flush">
+            <p>
+              <a class="link-opacity-50-hover" href="https://linktr.ee/dreams2code">Linktree</a>
+            </p>
+            <p>
+              <a class="link-opacity-50-hover" href="https://www.instagram.com/dreams2code/">Instagram</a>
+            </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
