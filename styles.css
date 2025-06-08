@@ -34,7 +34,7 @@ body {
     color: var(--white);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 20px;
     height: 48px;
     position: sticky;
@@ -50,11 +50,18 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     color: var(--white);
+    margin-right: 24px;
 }
 .navbar .logo svg {
     margin-right: 8px;
     width: 26px;
     height: 26px;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 12px;
 }
 .navbar nav {
     display: flex;
@@ -409,4 +416,112 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+    margin-left: 10px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 2.2em;
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+}
+.hero-buttons a {
+    display: inline-block;
+    padding: 0.85em 2.2em;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #38e8ff 0%, #4f8cff 100%);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(56, 232, 255, 0.13);
+    transition:
+        background 0.18s,
+        transform 0.18s,
+        box-shadow 0.18s;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+.hero-buttons a:hover, .hero-buttons a:focus {
+    background: linear-gradient(90deg, #1fd1f9 0%, #2956a3 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(56, 232, 255, 0.18);
+}
+.hero-buttons a.secondary {
+    background: linear-gradient(90deg, #2956a3 0%, #1fd1f9 100%);
+    color: #fff;
+}
+.hero-buttons a.secondary:hover, .hero-buttons a.secondary:focus {
+    background: linear-gradient(90deg, #4f8cff 0%, #38e8ff 100%);
+}
+.hero-buttons a.outline {
+    background: none;
+    color: #38e8ff;
+    border: 2px solid #38e8ff;
+    box-shadow: none;
+}
+.hero-buttons a.outline:hover, .hero-buttons a.outline:focus {
+    background: #22304a;
+    color: #fff;
+    border-color: #4f8cff;
+}
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 48px;
+    right: 16px;
+    background: #22304a;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(41, 86, 163, 0.13);
+    padding: 18px 0;
+    min-width: 160px;
+    z-index: 150;
+    animation: fadeInUp 0.3s;
+}
+.hamburger-menu a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.18s;
+    border: none;
+    background: none;
+    text-align: left;
+}
+.hamburger-menu a:hover {
+    background: var(--primary);
+}
+.hamburger-menu.open {
+    display: flex;
 }

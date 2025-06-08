@@ -27,10 +27,27 @@
                 </svg>
                 Dreams2Code
             </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="team.html">Team</a>
-            </nav>
+            <div class="navbar-right">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="team.html">Team</a>
+                </nav>
+                <button
+                    class="hamburger"
+                    id="hamburger-btn"
+                    aria-label="Open menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <a href="https://www.instagram.com/dreams2code"
+                        >Instagram</a
+                    >
+                    <a href="https://linktr.ee/dreams2code">Linktree</a>
+                </div>
+            </div>
         </div>
         <div class="team-section" data-aos="fade-up" data-aos-duration="1200">
             <div class="team-title" data-aos="fade-down" data-aos-delay="100">
@@ -236,6 +253,23 @@
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init({ once: true });
+        </script>
+        <script>
+            // Hamburger menu toggle
+            const hamburgerBtn = document.getElementById("hamburger-btn");
+            const hamburgerMenu = document.getElementById("hamburger-menu");
+            hamburgerBtn.addEventListener("click", function () {
+                hamburgerMenu.classList.toggle("open");
+            });
+            // Optional: close menu when clicking outside
+            document.addEventListener("click", function (e) {
+                if (
+                    !hamburgerBtn.contains(e.target) &&
+                    !hamburgerMenu.contains(e.target)
+                ) {
+                    hamburgerMenu.classList.remove("open");
+                }
+            });
         </script>
     </body>
 </html>

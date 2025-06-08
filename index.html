@@ -34,10 +34,27 @@
                 </svg>
                 Dreams2Code
             </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="team.html">Team</a>
-            </nav>
+            <div class="navbar-right">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="team.html">Team</a>
+                </nav>
+                <button
+                    class="hamburger"
+                    id="hamburger-btn"
+                    aria-label="Open menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <a href="https://www.instagram.com/dreams2code"
+                        >Instagram</a
+                    >
+                    <a href="https://linktr.ee/dreams2code">Linktree</a>
+                </div>
+            </div>
         </div>
         <div class="hero" id="hero" data-aos="fade-up" data-aos-duration="1200">
             <div class="hero-bg" id="vanta-bg"></div>
@@ -47,6 +64,23 @@
                     Dreams2Code is an organization in Central NJ dedicated to
                     teaching children coding through free workshops and events.
                 </p>
+                <div class="hero-buttons">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdw40--hwUHmdXSaC-blAXDJyLxotmFSf--7cJtzwj87dJbHQ/viewform"
+                        class="hero-btn hero-btn-primary"
+                        >Join the Team</a
+                    >
+                    <a
+                        href="https://events.mcl.org/event/14239430"
+                        class="hero-btn hero-btn-secondary"
+                        >MCL Classes</a
+                    >
+                    <a
+                        href="https://www.activekids.com/plainsboro-nj/stem/classes/dreams2code-java-coding-2025"
+                        class="hero-btn hero-btn-tertiary"
+                        >Plainsboro Classes</a
+                    >
+                </div>
             </div>
         </div>
         <!-- Photo Placeholders Row -->
@@ -95,8 +129,8 @@
                 "
             >
                 <img
-                    src="https://placehold.co/220x120?text=Photo+2"
-                    alt="Impact Photo 2"
+                    src="images/teaching4.png"
+                    alt="Teaching at Boys and Girls Club (3)"
                     style="width: 100%; height: 100%; object-fit: cover"
                 />
             </div>
@@ -133,8 +167,8 @@
                 "
             >
                 <img
-                    src="https://placehold.co/220x120?text=Photo+4"
-                    alt="Impact Photo 4"
+                    src="images/teaching3.png"
+                    alt="Teaching at MCL"
                     style="width: 100%; height: 100%; object-fit: cover"
                 />
             </div>
@@ -225,6 +259,22 @@
                     spacing: 18.0,
                 });
                 AOS.init({ once: true });
+            });
+
+            // Hamburger menu toggle
+            const hamburgerBtn = document.getElementById("hamburger-btn");
+            const hamburgerMenu = document.getElementById("hamburger-menu");
+            hamburgerBtn.addEventListener("click", function () {
+                hamburgerMenu.classList.toggle("open");
+            });
+            // Optional: close menu when clicking outside
+            document.addEventListener("click", function (e) {
+                if (
+                    !hamburgerBtn.contains(e.target) &&
+                    !hamburgerMenu.contains(e.target)
+                ) {
+                    hamburgerMenu.classList.remove("open");
+                }
             });
         </script>
     </body>
